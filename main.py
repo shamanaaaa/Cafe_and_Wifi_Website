@@ -60,7 +60,7 @@ def true_false(checkbox):
         return False
 
 
-@app.route("/")
+@app.route("/", methods=['GET'])
 def home():
     return render_template("index.html", dmap=None)
 
@@ -92,7 +92,7 @@ def all_coffees():
     return render_template("all_coffees.html", dmap=dmap, coffees=coffees)
 
 
-@app.route("/<selected_coffee>")
+@app.route("/<selected_coffee>", methods=['GET'])
 def coffee_detail(selected_coffee):
     coffee = Cafe.query.filter_by(name=selected_coffee).first()
     coordinates = get_coord_from_name(coffee_name=coffee)
@@ -121,7 +121,7 @@ def add_cafe():
         return render_template("index.html", dmap=None)
 
 
-@app.route("/delete/<selected_coffee>")
+@app.route("/delete/<selected_coffee>", methods=['POST'])
 def delete(selected_coffee):
     coffee = Cafe.query.filter_by(name=selected_coffee).first()
     db.session.delete(coffee)
