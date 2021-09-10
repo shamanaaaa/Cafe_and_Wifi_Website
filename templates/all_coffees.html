@@ -11,7 +11,6 @@
       {% for coffee in coffees %}
           <h4 class="h4_all_coffees">
             <a href="{{ url_for('coffee_detail' ,selected_coffee=coffee.name) }}">{{ coffee.name }}</a>
-
             {% if coffee.has_sockets == True: %}
             <i class="material-icons" style="color:green">power</i>
             {% else %}
@@ -40,6 +39,7 @@
             {{ coffee.seats }}
             <i class="material-icons" style="color:orange">local_cafe</i>
             {{ coffee.coffee_price }}
+            <a type="button" class="btn btn-danger" href="{{ url_for('delete' ,selected_coffee=coffee.name) }}" data-toggle="modal" data-target="#confirm-delete">DEL</a>
           </h4>
 
       {% endfor %}
