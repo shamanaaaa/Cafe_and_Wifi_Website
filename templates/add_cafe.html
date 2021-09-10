@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block content %}
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-7 col-sm-12 background">
+      <h1 class="h1_add">Add Coffee</h1>
+      <form class="add_submit_form" action="add_cafe" method = "POST">
+        <p>Name <input type = "text" name = "name" required/></p>
+        <p>Map URL <input type = "url" name = "map_url" required/></p>
+        <p>Image URL <input type = "url" name = "image_url" required/></p>
+        <p>Location <input type = "text" name = "location" required/></p>
+        <p>Price <input type="number" step="0.01" name = "price" required/></p>
+         <label for="seats">Choose seats:</label>
+          <select id="seats" name="seats">
+            <option value="0-10">0-10</option>
+            <option value="10-20">10-20</option>
+            <option value="20-30">20-30</option>
+            <option value="30-40">30-40</option>
+            <option value="40-50">40-50</option>
+            <option value="50+">50+</option>
+          </select>
+        <p>Sockets <input class="form-check-input" type="checkbox" name="socket_checkbox" value="true">
+           Toilets <input class="form-check-input" type="checkbox" name="toilet_checkbox" value="true">
+           Wifi <input class="form-check-input" type="checkbox" name="wifi_checkbox" value="true">
+           Calls <input class="form-check-input" type="checkbox" name="calls_checkbox" value="true"></p>
+        <p><input type = "submit" value = "submit" /></p>
+      </form>
+    </div>
+
+    <div class="col-lg-5 col-sm-12 background2">
+      <img class="add_coffee_image rounded-pill" src="https://images.unsplash.com/photo-1414808549009-35951c724e9f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80">
+      <img class="home_page_pin_img" src="https://www.nicepng.com/png/full/48-480195_google-maps-pin-png-google-map-pin-orange.png" alt="Map Pin" >
+    </div>
+  </div>
+</div>
+
+{% endblock %}

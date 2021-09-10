@@ -1,0 +1,145 @@
+.container {
+    width: 100%;
+    margin:0px !important;
+    padding: 0px !important;
+    max-width: unset;
+}
+.row {
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+}
+
+.background {
+    /*width: 100%;*/
+    height: 100vh;
+    background-color: black;
+    background-size: cover;
+    color: black;
+    text-align: center;
+ }
+
+.background2 {
+/*width: 100%;*/
+height: 100vh;
+background-color: black;
+background-size: cover;
+color: rgb(67, 67, 67);
+text-align: center;
+}
+.p-style{
+font-size: 20px;
+color:white;
+font-weight: bold;
+margin:auto;
+}
+
+.home_page_coffee_img {
+height: 100vh;
+
+}
+
+.h1_home {
+margin-top: 10%;
+font-family: system-ui;
+font-weight: 400;
+font-style: normal;
+color: rgb(255, 255, 255);
+text-decoration: none;
+font-size: 999%;
+}
+
+.h1_all_coffees {
+margin-top: 1%;
+font-family: system-ui;
+font-weight: 400;
+font-style: normal;
+color: rgb(255, 255, 255);
+text-decoration: none;
+font-size: 400%;
+
+
+}
+
+.h1_home_2 {
+margin-top: 1.5%;
+font-family: system-ui;
+font-weight: 400;
+font-style: normal;
+color: rgb(255, 255, 255);
+text-decoration: none;
+font-size: 550%;
+
+}
+
+.home_page_pin_img {
+margin-top: 15%;
+width : 30%;
+height : 30%;
+}
+
+.h4_all_coffees {
+font-family: system-ui;
+font-weight: 400;
+font-style: normal;
+color: rgb(255, 255, 255);
+text-decoration: none;
+font-size: 150%;
+}
+
+.scrollable-content {
+  height: 100vh;
+  overflow: auto;
+}
+
+.h4_coffee {
+margin-top: 5%;
+font-family: system-ui;
+font-weight: 400;
+font-style: normal;
+color: rgb(255, 255, 255);
+text-decoration: none;
+font-size: 250%;
+}
+
+.coffee_pin_img {
+width : 5%;
+height : 5%;
+}
+
+.coffee_image {
+    width: 100%;
+    height: 50%;
+ }
+
+.add_submit_form {
+text-align: right;
+margin-top: 3%;
+font-family: system-ui;
+font-weight: 400;
+font-style: normal;
+color: rgb(255, 255, 255);
+text-decoration: none;
+font-size: 250%;
+}
+
+.h1_add {
+text-align: right;
+margin-top: 2%;
+font-family: system-ui;
+font-weight: 400;
+font-style: normal;
+color: rgb(255, 255, 255);
+text-decoration: none;
+font-size: 999%;
+}
+
+.add_coffee_image {
+    margin-top: 8%;
+    width: 70%;
+    height: 30%;
+ }
