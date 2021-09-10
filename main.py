@@ -70,22 +70,22 @@ def all_coffees():
     coffees = get_all_coffees()
     # Geocoding: getting coordinates from address text
     markers = []
-    # for item in coffees:
-    #     markers.append(
-    #         {
-    #             'icon': 'https://maps.google.com/mapfiles/ms/icons/orange-dot.png',
-    #             'lat': (get_coordinates(api, item.name)["lat"]),
-    #             'lng': (get_coordinates(api, item.name)["lng"]),
-    #             'infobox': item.name,
-    #         }
-    #     )
+    for item in coffees:
+        markers.append(
+            {
+                'icon': 'https://maps.google.com/mapfiles/ms/icons/orange-dot.png',
+                'lat': (get_coordinates(api, item.name)["lat"]),
+                'lng': (get_coordinates(api, item.name)["lng"]),
+                'infobox': item.name,
+            }
+        )
 
     dmap = Map(
         identifier="dmap",
         varname="dmap",
         lat=51.50578984618858,
         lng=-0.07115033329515573,
-        # markers=markers,
+        markers=markers,
 
         style="height:100%;width:100%;margin:0;color:#242f3e;",
     )
